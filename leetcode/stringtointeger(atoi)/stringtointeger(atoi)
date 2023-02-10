@@ -1,0 +1,27 @@
+<script>
+
+// A simple atoi() function
+function myAtoi(str)
+{
+	
+		let res = 0;
+
+	
+		for (let i = 0; i < str.length; ++i)
+			res = res * 10 + str[i].charCodeAt(0) - '0'.charCodeAt(0);
+
+		
+		return res;
+}
+
+// Driver code
+let str = "89789";
+		
+		
+// Function call
+let val = myAtoi(str);
+document.write(val);
+
+
+
+</script>
